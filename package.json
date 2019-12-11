@@ -1,7 +1,18 @@
 {
   "name": "calcxactive",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.2.0",
+  "description": "Офлайн калькулятор расчета огнезащитного покрытия",
+  "license": "MIT",
+  "author": {
+    "name": "Vladimir N. Korotenko",
+    "email": "koroten@ya.ru",
+    "url": "http://vkorotenko.ru"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vkorotenko/calcxactive"
+  },
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -16,14 +27,15 @@
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.11.0",
     "@vue/cli-plugin-eslint": "^3.11.0",
-    "@vue/cli-service": "^3.11.0",
+    "@vue/cli-service": "^4.1.1",
     "babel-eslint": "^10.0.1",
     "bp-vuejs-dropdown": "^2.1.1",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
     "html-webpack-inline-source-plugin": "0.0.10",
     "html-webpack-plugin": "^3.2.0",
-    "vue-template-compiler": "^2.6.10"
+    "serialize-javascript": "^2.1.2",    
+    "vue-template-compiler": "^2.6.10"    
   },
   "eslintConfig": {
     "root": true,

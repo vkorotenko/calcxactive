@@ -1,6 +1,8 @@
 // vue.config.js
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-var HtmlWebpackInlineSourcePlugin = require("html-webpack-inline-source-plugin");
+const HtmlWebpackInlineSourcePlugin = require("html-webpack-inline-source-plugin");
+
+
 module.exports = {
   filenameHashing: false,
   publicPath: "./",
@@ -18,7 +20,7 @@ module.exports = {
     }
   },
   configureWebpack: {
-    plugins: [
+    plugins: [            
       /*
       new HtmlWebpackPlugin({
         template: 'public/index.html',

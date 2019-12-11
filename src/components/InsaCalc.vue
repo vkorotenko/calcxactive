@@ -394,7 +394,7 @@ export default {
         };
       }
     },
-    onChangePaint: function(event) {
+    onChangePaint: function(/*event*/) {
       this.selectedpaint = paintType.find(x => x.id === this.cyrpaint);
     }
   },
