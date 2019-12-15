@@ -94,8 +94,11 @@
         <td class="tb21">{{ totalspan | formatNumber }}</td>
       </tr>
       <tr class>
-        <td class="tb21" colspan="7"></td>
-        <td class="tb21">&nbsp;</td>
+        <td class="tb21" colspan="7">
+          <span v-html="spacer"></span>
+        </td>
+
+        <td class="tb21"></td>
       </tr>
       <tr class style="font-weight: bold;">
         <td class="tb21 tdr" colspan="7">{{ selectedpaint.name }}</td>
@@ -416,6 +419,7 @@ export default {
   },
   data: function() {
     return {
+      spacer: "&nbsp;",
       mattypes: mattypes,
       limitfire: limitfire,
       visible: true,
@@ -565,7 +569,6 @@ export default {
   z-index: -1;
 }
 .inputfile + label {
-  
   margin-top: 1px;
   margin-left: 5px;
   border: 1px solid #aaa;

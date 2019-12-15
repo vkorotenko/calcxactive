@@ -2,7 +2,6 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const HtmlWebpackInlineSourcePlugin = require("html-webpack-inline-source-plugin");
 
-
 module.exports = {
   filenameHashing: false,
   publicPath: "./",
@@ -20,7 +19,7 @@ module.exports = {
     }
   },
   configureWebpack: {
-    plugins: [            
+    plugins: [      
       /*
       new HtmlWebpackPlugin({
         template: 'public/index.html',

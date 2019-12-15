@@ -1,6 +1,6 @@
 <template>
   <div id="ognetitancalc">    
-    <InsaCalc msg="test"/>
+    <InsaCalc/>
   </div>
 </template>
 
