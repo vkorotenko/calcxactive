@@ -1,6 +1,6 @@
 {
   "name": "calcxactive",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Офлайн калькулятор расчета огнезащитного покрытия",
   "license": "MIT",
   "author": {
@@ -16,26 +16,27 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "update:packages": "node wipe-dependencies.js && rm -rf node_modules && npm update --save-dev && npm update --save"
   },
   "dependencies": {
-    "core-js": "^2.6.5",
-    "file-saver": "^2.0.2",
-    "v-suggestions": "^1.1.1",
-    "vue": "^2.6.10"
+    "core-js": "^3.6.4",
+    "file-saver": "*",
+    "v-suggestions": "*",
+    "vue": "*"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.11.0",
-    "@vue/cli-plugin-eslint": "^3.11.0",
-    "@vue/cli-service": "^4.1.1",
-    "babel-eslint": "^10.0.1",
-    "bp-vuejs-dropdown": "^2.1.1",
-    "eslint": "^5.16.0",
-    "eslint-plugin-vue": "^5.0.0",
-    "html-webpack-inline-source-plugin": "0.0.10",
-    "html-webpack-plugin": "^3.2.0",
-    "serialize-javascript": "^2.1.2",    
-    "vue-template-compiler": "^2.6.10"    
+    "@vue/cli-plugin-babel": "*",
+    "@vue/cli-plugin-eslint": "*",
+    "@vue/cli-service": "*",
+    "babel-eslint": "*",
+    "bp-vuejs-dropdown": "*",
+    "eslint": "*",
+    "eslint-plugin-vue": "*",
+    "html-webpack-inline-source-plugin": "*",
+    "html-webpack-plugin": "*",
+    "serialize-javascript": "*",
+    "vue-template-compiler": "*"
   },
   "eslintConfig": {
     "root": true,
